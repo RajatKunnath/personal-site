@@ -8,7 +8,10 @@
     {{ if in (slice "posts" "projects") .Type }}
     <p class="single-meta">
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-      {{ with .Params.tags }} &middot; {{ delimit . ", " }}{{ end }}
+      {{ with .Params.tags }}
+  	&middot;
+  	{{ range $i, $tag := . }}{{ if $i }}, {{ end }}<a href="{{ "/tags/" | relURL }}{{ $tag | urlize }}/">{{ $tag }}</a>{{ end }}
+{{ end }}
       {{ with $.Params.link }} &middot; <a href="{{ . }}">visit project &rarr;</a>{{ end }}
     </p>
     {{ end }}
