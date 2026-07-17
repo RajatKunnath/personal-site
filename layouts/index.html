@@ -1,0 +1,24 @@
+{{ define "main" }}
+<section class="hero">
+  <p class="eyebrow">{{ .Site.Params.tagline }}</p>
+  <h1 class="hero-name">Hi There 👋</h1>
+  <div class="hero-intro">{{ .Content }}</div>
+</section>
+
+<section class="stream" aria-label="Latest posts and projects">
+  {{ $entries := where .Site.RegularPages "Type" "in" (slice "posts" "projects") }}
+  {{ $entries = $entries.ByDate.Reverse }}
+  <ol class="stream-list">
+  {{ range $entries }}
+    <li class="stream-item">
+      <span class="mark mark-{{ .Type }}" aria-hidden="true">{{ if eq .Type "posts" }}&#9998;{{ else }}&#9686;{{ end }}</span>
+      <div class="stream-body">
+        <a href="{{ .RelPermalink }}" class="stream-title">{{ .Title }}</a>
+        <span class="stream-date">{{ .Date.Format "Jan 2006" }}</span>
+        {{ with .Params.summary }}<p class="stream-summary">{{ . }}</p>{{ end }}
+      </div>
+    </li>
+  {{ end }}
+  </ol>
+</section>
+{{ end }}

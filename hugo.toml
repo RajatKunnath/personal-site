@@ -1,0 +1,41 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "Rajat K R"
+paginate = 12
+enableRobotsTXT = true
+
+[params]
+  author = "Rajat K R"
+  tagline = "Code, design, and words — in whatever order they arrive."
+  # Short bio shown in the footer
+  footerNote = "Built with Hugo. No trackers, no cookies."
+
+[taxonomies]
+  tag = "tags"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
+    noClasses = false
+
+[menu]
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 1
+  [[menu.main]]
+    name = "Writing"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]

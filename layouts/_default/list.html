@@ -1,0 +1,21 @@
+{{ define "main" }}
+<header class="list-header">
+  <h1>{{ .Title }}</h1>
+  {{ if .Content }}<div class="list-intro">{{ .Content }}</div>{{ end }}
+</header>
+
+<ol class="stream-list">
+{{ range .Pages.ByDate.Reverse }}
+  <li class="stream-item">
+    {{ if in (slice "posts" "projects") .Type }}
+    <span class="mark mark-{{ .Type }}" aria-hidden="true">{{ if eq .Type "posts" }}&#9998;{{ else }}&#9686;{{ end }}</span>
+    {{ end }}
+    <div class="stream-body">
+      <a href="{{ .RelPermalink }}" class="stream-title">{{ .Title }}</a>
+      {{ if .Date }}<span class="stream-date">{{ .Date.Format "Jan 2006" }}</span>{{ end }}
+      {{ with .Params.summary }}<p class="stream-summary">{{ . }}</p>{{ end }}
+    </div>
+  </li>
+{{ end }}
+</ol>
+{{ end }}

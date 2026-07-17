@@ -1,0 +1,20 @@
+{{ define "main" }}
+<article class="single">
+  <header class="single-header">
+    {{ if in (slice "posts" "projects") .Type }}
+      <span class="mark mark-{{ .Type }}" aria-hidden="true">{{ if eq .Type "posts" }}&#9998;{{ else }}&#9686;{{ end }}</span>
+    {{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ if in (slice "posts" "projects") .Type }}
+    <p class="single-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+      {{ with .Params.tags }} &middot; {{ delimit . ", " }}{{ end }}
+      {{ with $.Params.link }} &middot; <a href="{{ . }}">visit project &rarr;</a>{{ end }}
+    </p>
+    {{ end }}
+  </header>
+  <div class="single-content">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

@@ -1,0 +1,364 @@
+/* ============================================
+   Design tokens
+   ============================================ */
+:root {
+  --ink:      #100E0C;  /* background */
+  --paper:    #EDE6D8;  /* primary text */
+  --moss:     #3F7566;  /* primary accent: verdigris */
+  --ochre:    #C9932F;  /* secondary accent */
+  --line:     #33302A;  /* hairline dividers */
+  --muted:    #9C9686;  /* secondary text */
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body:    "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono:    "IBM Plex Mono", ui-monospace, monospace;
+
+  --gutter: 2.75rem;
+  --measure: 640px;
+}
+
+/* ============================================
+   Reset & base
+   ============================================ */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: var(--muted);
+  text-underline-offset: 3px;
+}
+a:hover { text-decoration-color: var(--moss); }
+
+:focus-visible {
+  outline: 2px solid var(--ochre);
+  outline-offset: 3px;
+}
+
+img { max-width: 100%; display: block; }
+
+/* ============================================
+   Header
+   ============================================ */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 1.5rem;
+}
+
+.site-brand {
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--muted);
+}
+.site-nav a:hover,
+.site-nav a.is-active {
+  color: var(--ochre);
+}
+
+.rss-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--muted);
+}
+.rss-link:hover { color: var(--moss); }
+
+/* ============================================
+   Main / hero
+   ============================================ */
+.site-main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 1.5rem 5rem;
+}
+
+.hero {
+  padding: 1rem 0 3.5rem;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 3rem;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--moss);
+  margin: 0 0 1rem;
+  letter-spacing: 0.02em;
+  position: relative;
+  top: -0.75rem;
+}
+
+.hero-name {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 600;
+  line-height: 1.05;
+  margin: 0 0 1.25rem;
+  color: var(--paper);
+}
+
+.hero-intro {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 400;
+  line-height: 1.35;
+  max-width: var(--measure);
+  color: var(--paper);
+}
+
+.hero-intro p { margin: 0; }
+
+/* ============================================
+   Stream (the signature element)
+   Marginalia gutter: a discipline mark sits in a
+   fixed-width left column, like a printer's proof mark.
+   ============================================ */
+.stream-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.stream-item {
+  display: grid;
+  grid-template-columns: var(--gutter) 1fr;
+  gap: 0 1rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.stream-item:first-child { padding-top: 0; }
+
+.mark {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  color: var(--muted);
+  line-height: 1.5;
+  text-align: center;
+}
+
+.mark-posts   { color: var(--ochre); }
+.mark-projects{ color: var(--moss); }
+
+.stream-body { min-width: 0; }
+
+.stream-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline;
+}
+.stream-title:hover { color: var(--moss); }
+
+.stream-date {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-left: 0.75rem;
+  white-space: nowrap;
+}
+
+.stream-summary {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  max-width: var(--measure);
+}
+
+/* ============================================
+   List page header (Writing / Projects / Tags)
+   ============================================ */
+.list-header {
+  padding: 1rem 0 2.5rem;
+}
+
+.list-header h1 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem;
+}
+
+.list-intro {
+  color: var(--muted);
+  max-width: var(--measure);
+}
+
+/* ============================================
+   Single article
+   ============================================ */
+.single { padding-top: 1rem; }
+
+.single-header {
+  display: grid;
+  grid-template-columns: var(--gutter) 1fr;
+  gap: 0 1rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.single-header .mark {
+  grid-row: 1;
+}
+
+.single-header h1 {
+  grid-column: 2;
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 0 0.5rem;
+}
+
+.single-meta {
+  grid-column: 2;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.single-meta a { color: var(--ochre); text-decoration: none; }
+.single-meta a:hover { text-decoration: underline; }
+
+.single-content {
+  max-width: var(--measure);
+  font-size: 1.05rem;
+}
+
+.single-content h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-top: 2.5rem;
+}
+
+.single-content h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.15rem;
+}
+
+.single-content p { margin: 1.1em 0; }
+
+.single-content a { color: var(--ochre); }
+
+.single-content blockquote {
+  margin: 1.5em 0;
+  padding-left: 1.25em;
+  border-left: 2px solid var(--moss);
+  color: var(--muted);
+  font-style: italic;
+}
+
+.single-content code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  background: rgba(255,255,255,0.06);
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+}
+
+.single-content pre {
+  background: #17140F;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 1.25rem;
+  overflow-x: auto;
+}
+
+.single-content pre code {
+  background: none;
+  padding: 0;
+}
+
+.single-content ul, .single-content ol {
+  padding-left: 1.4em;
+}
+
+/* ============================================
+   Tag cloud (/tags/)
+   ============================================ */
+.tag-cloud {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+}
+
+.tag-cloud a {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--ochre);
+}
+
+.tag-count {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+.site-footer {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 560px) {
+  :root { --gutter: 2rem; }
+  .stream-item, .single-header {
+    grid-template-columns: var(--gutter) 1fr;
+  }
+  .stream-date { display: block; margin-left: 0; margin-top: 0.15rem; }
+}
+
+/* ============================================
+   Reduced motion
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; }
+}
