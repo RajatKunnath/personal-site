@@ -1,6 +1,6 @@
 {{ define "main" }}
 <article class="single">
-  <header class="single-header">
+  <header class="single-header{{ if not (in (slice "posts" "projects") .Type) }} single-header--plain{{ end }}">
     {{ if in (slice "posts" "projects") .Type }}
       <span class="mark mark-{{ .Type }}" aria-hidden="true">{{ if eq .Type "posts" }}&#9998;{{ else }}&#9686;{{ end }}</span>
     {{ end }}

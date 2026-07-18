@@ -229,6 +229,16 @@ img { max-width: 100%; display: block; }
   border-bottom: 1px solid var(--line);
 }
 
+.single-header--plain {
+  border-bottom: none;
+  padding-bottom: 0;
+  grid-template-columns: 1fr;
+}
+
+.single-header.single-header--plain h1 {
+  grid-column: 1;
+}
+
 .single-header .mark {
   grid-row: 1;
 }
