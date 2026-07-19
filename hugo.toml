@@ -8,7 +8,7 @@ enableRobotsTXT = true
   author = "Rajat K R"
   tagline = "Code, design, and words — in whatever order they arrive."
   # Short bio shown in the footer
-  footerNote = "Built with Hugo. No trackers, no cookies."
+  footerNote = "Built with Hugo & Congo. No trackers, no cookies."
 
 [taxonomies]
   tag = "tags"

@@ -354,6 +354,10 @@ img { max-width: 100%; display: block; }
   font-size: 0.8rem;
 }
 
+.newsletter-section {
+  margin-bottom: 2rem;
+}
+
 /* ============================================
    Responsive
    ============================================ */

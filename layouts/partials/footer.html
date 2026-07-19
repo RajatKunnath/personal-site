@@ -1,3 +1,6 @@
 <footer class="site-footer">
-  <p>&copy; {{ now.Format "2006" }} {{ .Site.Params.author }}. {{ .Site.Params.footerNote }}</p>
+  <div id="subscribe" class="newsletter-section">
+    {{ partial "newsletter.html" . }}
+  </div><br>
+  <p>{{ .Site.Params.footerNote }}</p>
 </footer>

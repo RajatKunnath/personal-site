@@ -14,7 +14,7 @@
       <span class="mark mark-{{ .Type }}" aria-hidden="true">{{ if eq .Type "posts" }}&#9998;{{ else }}&#9686;{{ end }}</span>
       <div class="stream-body">
         <a href="{{ .RelPermalink }}" class="stream-title">{{ .Title }}</a>
-        <span class="stream-date">{{ .Date.Format "Jan 2006" }}</span>
+        <span class="stream-date">{{ .Date.Format "Jan 2006" }}{{ if eq .Type "posts" }} &middot; {{ .ReadingTime }} min read{{ end }}</span>
         {{ with .Params.summary }}<p class="stream-summary">{{ . }}</p>{{ end }}
       </div>
     </li>

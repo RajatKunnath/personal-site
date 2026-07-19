@@ -25,6 +25,7 @@
     
       <a href="http://localhost:1313/about/">About</a>
     
+    <a href="http://localhost:1313/#subscribe">Subscribe</a>
     <a href="http://localhost:1313/index.xml" class="rss-link" aria-label="RSS feed" title="RSS feed">
       <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path d="M4 11a9 9 0 0 1 9 9"></path>
@@ -82,7 +83,101 @@
 
 </main>
 <footer class="site-footer">
-  <p>&copy; 2026 Rajat K R. Built with Hugo. No trackers, no cookies.</p>
+  <div id="subscribe" class="newsletter-section">
+    <style>
+  .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    margin-top: 30px !important;
+    padding: clamp(17px, 5%, 40px) clamp(17px, 7%, 50px) !important;
+    max-width: none !important;
+    border-radius: 6px !important;
+    border: 1px solid var(--line) !important;
+    box-shadow: none !important;
+  }
+  .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview,
+  .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview * {
+    box-sizing: border-box !important;
+  }
+  .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-heading {
+    width: 100% !important;
+  }
+  .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-heading h5 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field {
+    margin-top: 20px !important;
+    width: 100% !important;
+  }
+  .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input {
+    width: 100% !important;
+    height: 40px !important;
+    border-radius: 6px !important;
+    border: 1px solid var(--line) !important;
+    background-color: var(--ink) !important;
+    outline: none !important;
+    color: var(--paper) !important;
+    font-family: var(--font-body) !important;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+  }
+  .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input::placeholder {
+    color: var(--muted) !important;
+    opacity: 1 !important;
+  }
+  .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input:-ms-input-placeholder {
+    color: var(--muted) !important;
+  }
+  .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input::-ms-input-placeholder {
+    color: var(--muted) !important;
+  }
+  .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button {
+    margin-top: 10px !important;
+    width: 100% !important;
+  }
+  .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button button {
+    width: 100% !important;
+    height: 40px !important;
+    border: 0 !important;
+    border-radius: 6px !important;
+    line-height: 0px !important;
+    font-family: var(--font-mono) !important;
+  }
+  .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button button:hover {
+    cursor: pointer !important;
+  }
+  .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .powered-by-line {
+  display: none !important;
+  margin-top: 0 !important;
+  }
+  .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .powered-by-line img {
+    display: none !important;
+    margin-top: 0 !important;
+  }
+</style>
+<div class="followit--follow-form-container" attr-a attr-b attr-c attr-d attr-e attr-f>
+  <form action="https://api.follow.it/subscription-form/MFByQks4b0ZqMDlENjRIQWcrdTNDK1FVaC9pcEJrN1pwVmdUNXdONUIrdG16ZU1NT0VFaW9VUW9hdUgyMzMzNGo0ekZZbDM5OGVmNmlMQTZZWVJYMWM5dFJZRFR1K1F5cnYrd0R5K0VCUXRlcVMvSTR1WkhoUVRPNE1NSFNTcHp8M1M0RndYTmpBekF3ejh2TitZUFhtUmRhTytobUVFb08rMlBKcStHbEd6MD0=/8" method="post">
+    <div class="form-preview" style="background-color: var(--ink); position: relative;">
+      <div class="preview-heading">
+        <h5 style="font-family: var(--font-display); font-weight: 600; color: var(--paper); font-size: 1.1rem; text-align: center;">Get new posts by email:</h5>
+      </div>
+      <div class="preview-input-field">
+        <input type="email" name="email" required placeholder="Enter your email" spellcheck="false">
+      </div>
+      <div class="preview-submit-button">
+        <button type="submit" style="font-family: var(--font-mono); font-weight: 500; color: var(--ink); font-size: 0.95rem; text-align: center; background-color: var(--moss);">Subscribe</button>
+      </div>
+    </div>
+  </form>
+  <a href="https://follow.it" class="powered-by-line">Powered by <img src="https://follow.it/images/colored-logo.svg" alt="follow.it" height="17px"></a>
+</div>
+
+  </div><br>
+  <p>Built with Hugo &amp; Congo. No trackers, no cookies.</p>
 </footer>
 
 </body>
