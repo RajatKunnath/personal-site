@@ -25,6 +25,7 @@
     
       <a href="http://localhost:1313/about/">About</a>
     
+    <a href="http://localhost:1313/#subscribe">Subscribe</a>
     <a href="http://localhost:1313/index.xml" class="rss-link" aria-label="RSS feed" title="RSS feed">
       <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path d="M4 11a9 9 0 0 1 9 9"></path>
@@ -42,25 +43,107 @@
 </header>
 <ul class="tag-cloud">
   
-    <li><a href="/tags/beginning/">Beginning</a> <span class="tag-count">1</span></li>
+    <li><a href="/tags/opinion/">Opinion</a> <span class="tag-count">1</span></li>
   
-    <li><a href="/tags/code/">Code</a> <span class="tag-count">1</span></li>
-  
-    <li><a href="/tags/demo/">Demo</a> <span class="tag-count">1</span></li>
-  
-    <li><a href="/tags/design/">Design</a> <span class="tag-count">1</span></li>
-  
-    <li><a href="/tags/meta/">Meta</a> <span class="tag-count">1</span></li>
-  
-    <li><a href="/tags/notes/">Notes</a> <span class="tag-count">1</span></li>
-  
-    <li><a href="/tags/writing/">Writing</a> <span class="tag-count">1</span></li>
+    <li><a href="/tags/politics/">Politics</a> <span class="tag-count">1</span></li>
   
 </ul>
 
 </main>
 <footer class="site-footer">
-  <p>Rajat K R. Built with Hugo &amp; Congo. No trackers, no cookies.</p>
+  <div id="subscribe" class="newsletter-section">
+    <style>
+  .newsletter--brevo-form .form-preview {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    margin-top: 30px !important;
+    padding: clamp(17px, 5%, 40px) clamp(17px, 7%, 50px) !important;
+    max-width: none !important;
+    border-radius: 6px !important;
+    border: 1px solid var(--line) !important;
+    background-color: var(--ink) !important;
+    position: relative;
+  }
+  .newsletter--brevo-form .form-preview,
+  .newsletter--brevo-form .form-preview * {
+    box-sizing: border-box !important;
+  }
+  .newsletter--brevo-form .preview-heading h5 {
+    margin: 0 !important;
+    font-family: var(--font-display) !important;
+    font-weight: 600 !important;
+    color: var(--paper) !important;
+    font-size: 1.1rem !important;
+    text-align: center !important;
+  }
+  .newsletter--brevo-form .preview-input-field {
+    margin-top: 20px !important;
+    width: 100% !important;
+  }
+  .newsletter--brevo-form .preview-input-field input {
+    width: 100% !important;
+    height: 40px !important;
+    border-radius: 6px !important;
+    border: 1px solid var(--line) !important;
+    background-color: var(--ink) !important;
+    outline: none !important;
+    color: var(--paper) !important;
+    font-family: var(--font-body) !important;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+  }
+  .newsletter--brevo-form .preview-input-field input::placeholder {
+    color: var(--muted) !important;
+    opacity: 1 !important;
+  }
+  .newsletter--brevo-form .preview-submit-button {
+    margin-top: 10px !important;
+    width: 100% !important;
+  }
+  .newsletter--brevo-form .preview-submit-button button {
+    width: 100% !important;
+    height: 40px !important;
+    border: 0 !important;
+    border-radius: 6px !important;
+    line-height: 0px !important;
+    font-family: var(--font-mono) !important;
+    font-weight: 500 !important;
+    color: var(--ink) !important;
+    font-size: 0.95rem !important;
+    text-align: center !important;
+    background-color: var(--moss) !important;
+    cursor: pointer !important;
+  }
+  .newsletter--brevo-form input[name="email_address_check"] {
+    display: none !important;
+  }
+</style>
+
+<div class="newsletter--brevo-form">
+  <form id="sib-form" method="POST"
+    action="https://c12c4c2e.sibforms.com/serve/MUIFABtm1f9u_YiWsK2lsjdnc69Je-5pEFcVTpiE7PzmA1LJkjo6hh2TNDxxPR-LkWqU_MJg4MWuIelfq2yWiDsQKqDsSk4ncQ5MvCft1dfqVFg-gvy1lfq1tHwFdVr77PdUwG3gsErj4Hw3fhByutSveOXshkdU7UwquZiGC0fM-Z-MPaapvC--yAwHiSJfSTB5tYzLSWM6HmRWXA==">
+    <div class="form-preview">
+      <div class="preview-heading">
+        <h5>Get new posts by email:</h5>
+      </div>
+      <div class="preview-input-field">
+        <input type="email" id="EMAIL" name="EMAIL" required placeholder="Enter your email" spellcheck="false" autocomplete="off">
+      </div>
+      <div class="preview-submit-button">
+        <button type="submit">Subscribe</button>
+      </div>
+      <input type="text" name="email_address_check" value="">
+      <input type="hidden" name="locale" value="en">
+      <input type="hidden" name="html_type" value="simple">
+    </div>
+  </form>
+</div>
+
+  </div><br>
+  <p>Built with Hugo &amp; Congo. No trackers, no cookies.</p>
 </footer>
 
 </body>

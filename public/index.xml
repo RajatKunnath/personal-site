@@ -10,43 +10,22 @@
 		
 		
 		
-			<lastBuildDate>Fri, 17 Jul 2026 22:02:35 +0530</lastBuildDate>
+			<lastBuildDate>Mon, 17 Aug 2026 19:30:43 +0530</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
 			<item>
-				<title>My First Post</title>
-				<link>http://localhost:1313/posts/my-first-post/</link>
-				<pubDate>Fri, 17 Jul 2026 22:02:35 +0530</pubDate>
-				<guid>http://localhost:1313/posts/my-first-post/</guid>
-				<description>This is my first post</description>
-			</item>
-			<item>
-				<title>Demo2</title>
-				<link>http://localhost:1313/posts/demo2/</link>
-				<pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/posts/demo2/</guid>
-				<description>Demo2 Summary</description>
-			</item>
-			<item>
-				<title>Demo</title>
-				<link>http://localhost:1313/posts/demo/</link>
-				<pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/posts/demo/</guid>
-				<description>Demo Summary</description>
-			</item>
-			<item>
-				<title>A Sample Project</title>
-				<link>http://localhost:1313/projects/sample-project/</link>
-				<pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/projects/sample-project/</guid>
-				<description>A placeholder project entry</description>
+				<title>What about them?</title>
+				<link>http://localhost:1313/posts/poverty/</link>
+				<pubDate>Mon, 17 Aug 2026 19:30:43 +0530</pubDate>
+				<guid>http://localhost:1313/posts/poverty/</guid>
+				<description>The other day when I was reading the newspaper, I came across this wonderful picture&amp;hellip;</description>
 			</item>
 			<item>
 				<title>About</title>
 				<link>http://localhost:1313/about/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/about/</guid>
-				<description>&lt;p&gt;This is my bio. Hee hee&lt;/p&gt;</description>
+				<description>&lt;p&gt;Hi there fellow web-surfer! I am Rajat K R, an engineering student based in Bangalore, India. I am about 18 years old and on this website you&amp;rsquo;ll find my writings on things that fascinate me, such as -&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Books&lt;/li&gt;&#xA;&lt;li&gt;Movies&lt;/li&gt;&#xA;&lt;li&gt;Music&lt;/li&gt;&#xA;&lt;li&gt;Politics&lt;/li&gt;&#xA;&lt;li&gt;History&lt;/li&gt;&#xA;&lt;li&gt;Photography&lt;/li&gt;&#xA;&lt;li&gt;Technology&lt;/li&gt;&#xA;&lt;li&gt;and some other things&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;I hope you have a great time around here and thanks for coming by this page!&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>
