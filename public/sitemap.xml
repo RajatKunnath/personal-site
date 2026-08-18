@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/opinion/</loc>
+    <loc>https://rajatkr.com/tags/opinion/</loc>
     <lastmod>2026-08-17T19:30:43+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/politics/</loc>
+    <loc>https://rajatkr.com/tags/politics/</loc>
     <lastmod>2026-08-17T19:30:43+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://rajatkr.com/posts/</loc>
     <lastmod>2026-08-17T19:30:43+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://rajatkr.com/</loc>
     <lastmod>2026-08-17T19:30:43+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://rajatkr.com/tags/</loc>
     <lastmod>2026-08-17T19:30:43+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/poverty/</loc>
+    <loc>https://rajatkr.com/posts/poverty/</loc>
     <lastmod>2026-08-17T19:30:43+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://rajatkr.com/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://rajatkr.com/projects/</loc>
   </url>
 </urlset>
