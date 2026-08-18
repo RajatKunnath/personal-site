@@ -12,4 +12,4 @@ Hi there fellow web-surfer! I am Rajat K R, an engineering student based in Bang
 * Technology
 * and some other things
 
-I hope you have a great time around here and thanks for coming by this page!
+I hope you have a great time around here and thanks for stopping by!
