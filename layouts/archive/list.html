@@ -1,0 +1,20 @@
+{{ define "main" }}
+<section class="hero">
+  {{ with .Description }}<p class="eyebrow">{{ . }}</p>{{ end }}
+  <h1 class="hero-name">{{ .Title }}</h1>
+</section>
+<section class="stream" aria-label="Archived posts">
+  <ol class="stream-list">
+  {{ range .Pages.ByDate.Reverse }}
+    <li class="stream-item">
+      <span class="mark mark-posts" aria-hidden="true">&#9998;</span>
+      <div class="stream-body">
+        <a href="{{ .RelPermalink }}" class="stream-title">{{ .Title }}</a>
+        <span class="stream-date">{{ .Date.Format "Jan 2006" }} &middot; {{ .ReadingTime }} min read</span>
+        {{ with .Params.summary }}<p class="stream-summary">{{ . }}</p>{{ end }}
+      </div>
+    </li>
+  {{ end }}
+  </ol>
+</section>
+{{ end }}
