@@ -9,6 +9,13 @@
 error on line 1 at column 1: Start tag expected, '&lt;' not found
     <atom:link href="http://localhost:1313/projects/" rel="self" type="application/rss+xml" />
     <item>
+      <title>Mind to Mend?</title>
+      <link>http://localhost:1313/posts/mind-to-mend/</link>
+      <pubDate>Thu, 12 Nov 2026 14:15:40 +0530</pubDate>
+      <guid>http://localhost:1313/posts/mind-to-mend/</guid>
+      <description>&lt;p&gt;Ever noticed where all the cobblers went? What happened to them? When I was a small kid, there were a lot of cobblers and &amp;lsquo;&amp;lsquo;&amp;lsquo;people-who-fix-umbrellas&amp;rsquo;&amp;rsquo;&amp;rsquo;(or whatever they&amp;rsquo;re called) at every nook and corner of the city, but nowadays for some reason, they seem to have disappeared altogether? The other day, while I was stuck in the horrible Bengaluru traffic, I saw a cobbler sitting rather expressionless and stoic. This was quite a refreshing sight for someone who hasn&amp;rsquo;t seen a cobbler in years. I was happy for the fact that atleast someone was taking up that profession but was also sad at the fact that the poor chap was not getting as much business like in the olden days. Now that I think about it, I don&amp;rsquo;t think even I myself would go to a cobbler to get my shoes fixed. For we, the modern generation is so used to just buying a pair of shoes and sandals whenever we feel like it. Is it because of the fact that shoes are made of stronger materials? or they&amp;rsquo;ve become more cheaper and affordable? or just better standards of living? Maybe, but I don&amp;rsquo;t think so.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>What about them?</title>
       <link>http://localhost:1313/posts/poverty/</link>
       <pubDate>Mon, 17 Aug 2026 19:30:43 +0530</pubDate>
