@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech on Rajat K R</title>
+    <link>http://localhost:1313/tags/tech/</link>
+    <description>Recent content in Tech on Rajat K R</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Sep 2021 11:31:01 +0000</lastBuildDate>
+error on line 1 at column 1: Start tag expected, '&lt;' not found
+    <atom:link href="http://localhost:1313/tags/tech/" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mind to Mend?</title>
+      <link>http://localhost:1313/posts/mind-to-mend/</link>
+      <pubDate>Thu, 12 Nov 2026 14:15:40 +0530</pubDate>
+      <guid>http://localhost:1313/posts/mind-to-mend/</guid>
+      <description>Ever noticed where all the cobblers went? What happened to them? When I was a small kid&amp;hellip;</description>
+    </item>
+    <item>
+      <title>What about them?</title>
+      <link>http://localhost:1313/posts/poverty/</link>
+      <pubDate>Mon, 17 Aug 2026 19:30:43 +0530</pubDate>
+      <guid>http://localhost:1313/posts/poverty/</guid>
+      <description>The other day when I was reading the newspaper, I came across this wonderful picture&amp;hellip;</description>
+    </item>
+  </channel>
+</rss>
