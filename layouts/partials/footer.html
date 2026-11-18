@@ -3,4 +3,9 @@
     {{ partial "newsletter.html" . }}
   </div><br>
   <p>{{ .Site.Params.footerNote }}</p>
+    <p>The content on this website must not be used to train AI models, under any circumstances.</p>
+<br>
+<div class="footer-legal">
+    <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
+</div>
 </footer>
