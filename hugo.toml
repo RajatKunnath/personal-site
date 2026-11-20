@@ -8,7 +8,8 @@ enableRobotsTXT = true
   author = "Rajat K R"
   tagline = "A safe haven for all my shenaniganisms."
   # Short bio shown in the footer
-  footerNote = "Built with Hugo & Congo. No trackers, no cookies."
+  footerNote = "Built with Hugo. No trackers, no cookies."
+  showComments = true
 
 [taxonomies]
   tag = "tags"
